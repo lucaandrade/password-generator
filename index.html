@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1 id="headline">Generate a <br> <span id="random-word">random password</span></h1>
+        <h2 id="subheadline">Never use an insecure password again.</h2>
+        <p id="length-display">LENGHT:0</p>
+        <div class="password-container">
+            <span id="msgUser">Select a lenght and click Generate</span>
+            <input type="range" id="range-el" name="lenght" min="8" max="32">
+        </div>
+        <section>
+            <div class="settings">
+                <span>SETTINGS</span>
+                <input type="checkbox" id="include-numbers">
+                <label for="include-numbers">Include numbers</label>
+                <input type="checkbox" id="include-symbols">
+                <label for="include-symbols">Include symbols</label>
+            </div>
+        </section>
+        <div class="generate-pass-btn">
+            <button id="generatebtn" onclick="generatepass()">Generate passwords</button>
+        </div>
+        <div class="line"></div>
+            <span id="generated-passwords">GENERATED PASSWORDS <span id="click-to-copy">(Click to copy!)</span></span>
+            <div class="pswd-box">
+                <span id="password1"></span>
+                <span id="password2"></span>
+            </div>
+        <div id="copy-msg" class="copy-message">Copied to Clipboard!</div>
+        <script src="index.js"></script>
+    </div>
+    </body>
+</html>
